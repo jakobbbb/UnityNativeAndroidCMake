@@ -1,6 +1,9 @@
 cmake_minimum_required(VERSION 3.16)
 
-set(UNITY_PROJECT_DIR ${CMAKE_SOURCE_DIR}/../UnityProject)
+# Root directory of the unity project into which the plugin is to be copied
+if(NOT DEFINED UNITY_PROJECT_DIR)
+    set(UNITY_PROJECT_DIR ${CMAKE_SOURCE_DIR}/../UnityProject)
+endif()
 
 # Get Editor version from ProjectSettings
 file(READ "${UNITY_PROJECT_DIR}/ProjectSettings/ProjectVersion.txt" file_content)
@@ -22,7 +25,7 @@ if(NOT DEFINED UNITY_EDITOR)
 endif()
 
 # Set up compilation using NDK
-if(${CMAKE_SYSTEM_NAME} STREQUAL "Android")
+if(DEFINED CMAKE_SYSTEM_NAME AND CMAKE_SYSTEM_NAME STREQUAL Android)
     if(WIN32)
         message(WARNING "Compilation for Android has not been tested on Windows yet.")
     endif()
