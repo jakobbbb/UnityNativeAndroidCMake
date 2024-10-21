@@ -47,5 +47,8 @@ codeformat:
 
 .PHONY: clean
 clean:
-	[ -f $(BUILD_DIR)/install_manifest.txt ] && xargs rm < $(BUILD_DIR)/install_manifest.txt || echo "Could not uninstall."
 	rm -fr $(BUILD_DIR)/
+
+.PHONY: uninstall
+uninstall:
+	[ -f $(BUILD_DIR)/install_manifest.txt ] && xargs rm < $(BUILD_DIR)/install_manifest.txt || echo "Could not uninstall."
