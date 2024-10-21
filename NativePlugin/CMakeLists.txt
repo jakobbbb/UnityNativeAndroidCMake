@@ -17,7 +17,7 @@ endif()
 if(UNIX)
     include_directories(~/Unity/Hub/Editor/${EDITOR_VERSION}/Editor/Data/PluginAPI/)
 elseif(WIN32)
-    include_directories(C:/Program\ Files/Unity/Hub/Editor/${EDITOR_VERSION}/Editor/Data/PluginAPI/)
+    include_directories("C:/Program Files/Unity/Hub/Editor/${EDITOR_VERSION}/Editor/Data/PluginAPI/")
 endif()
 
 message(STATUS "System: ${CMAKE_SYSTEM_NAME}")
