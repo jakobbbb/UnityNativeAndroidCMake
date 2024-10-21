@@ -14,6 +14,10 @@ else()
     message(WARNING "Could not find 'm_EditorVersion' in ProjectVersion.txt")
 endif()
 
-include_directories(~/Unity/Hub/Editor/${EDITOR_VERSION}/Editor/Data/PluginAPI/)
+if(UNIX)
+    include_directories(~/Unity/Hub/Editor/${EDITOR_VERSION}/Editor/Data/PluginAPI/)
+elseif(WIN32)
+    include_directories(C:/Program\ Files/Unity/Hub/Editor/${EDITOR_VERSION}/Editor/Data/PluginAPI/)
+endif()
 
 add_subdirectory(src)
