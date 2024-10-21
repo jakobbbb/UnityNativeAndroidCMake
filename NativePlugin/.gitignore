@@ -22,3 +22,12 @@
 
 build
 cmake_out
+
+*.vcxproj*
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+install_manifest.txt
+src/Debug
+src/*.dir
+/x64

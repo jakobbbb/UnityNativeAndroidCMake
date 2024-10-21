@@ -1,6 +1,8 @@
 *.exe
 *.x86_64
 *.so
+*.lib
+*.dll
 *.debug
 *_Data/
 *~
