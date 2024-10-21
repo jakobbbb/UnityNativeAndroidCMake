@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 57b6e153e9eb9494ea61b6905432ff5a
+guid: caee5d53912bc42fbbf3a298d03530d6
 PluginImporter:
   externalObjects: {}
   serializedVersion: 3
@@ -16,36 +16,36 @@ PluginImporter:
       settings:
         AndroidLibraryDependee: UnityLibrary
         AndroidSharedLibraryType: Executable
-        CPU: X86_64
+        CPU: ARM64
     Any:
-      enabled: 1
+      enabled: 0
       settings:
         Exclude Android: 0
-        Exclude Editor: 0
-        Exclude Linux64: 0
-        Exclude OSXUniversal: 0
-        Exclude Win: 0
-        Exclude Win64: 0
+        Exclude Editor: 1
+        Exclude Linux64: 1
+        Exclude OSXUniversal: 1
+        Exclude Win: 1
+        Exclude Win64: 1
     Editor:
-      enabled: 1
+      enabled: 0
       settings:
         CPU: AnyCPU
         DefaultValueInitialized: true
         OS: AnyOS
     Linux64:
-      enabled: 1
+      enabled: 0
       settings:
-        CPU: x86_64
+        CPU: None
     OSXUniversal:
-      enabled: 1
+      enabled: 0
       settings:
         CPU: None
     Win:
-      enabled: 1
+      enabled: 0
       settings:
-        CPU: x86
+        CPU: None
     Win64:
-      enabled: 1
+      enabled: 0
       settings:
         CPU: None
   userData: 
