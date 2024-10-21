@@ -1,4 +1,5 @@
 add_library(NativePlugin
+    SHARED
     plugin.cpp
 )
 
