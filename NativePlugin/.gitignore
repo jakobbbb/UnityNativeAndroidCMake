@@ -21,6 +21,7 @@
 *.app
 
 build
+build_*
 cmake_out
 
 *.vcxproj*

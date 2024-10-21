@@ -21,5 +21,9 @@ elseif(WIN32)
 endif()
 
 message(STATUS "System: ${CMAKE_SYSTEM_NAME}")
+
+if(${CMAKE_SYSTEM_NAME} STREQUAL "Android")
+endif()
+
 add_subdirectory(src)
 add_subdirectory(meta)
