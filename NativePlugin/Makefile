@@ -31,8 +31,6 @@ debug: default;
 
 .PHONY: android
 android: CMAKE_FLAGS += -DCMAKE_SYSTEM_NAME=Android
-android: CMAKE_FLAGS += -DCMAKE_TOOLCHAIN_FILE="/home/jakob/Unity/Hub/Editor/6000.0.23f1/Editor/Data/PlaybackEngines/AndroidPlayer/NDK/build/cmake/android.toolchain.cmake"
-android: CMAKE_FLAGS += -DANDROID_ABI=arm64-v8a
 android: default;
 
 
