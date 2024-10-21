@@ -22,3 +22,4 @@ endif()
 
 message(STATUS "System: ${CMAKE_SYSTEM_NAME}")
 add_subdirectory(src)
+add_subdirectory(meta)
