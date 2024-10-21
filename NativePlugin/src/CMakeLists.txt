@@ -6,6 +6,3 @@ add_library(NativePlugin
 install(TARGETS NativePlugin
     DESTINATION ${UNITY_PROJECT_DIR}/Assets/Plugins/${CMAKE_SYSTEM_NAME}
 )
-
-# generate compile_commands.json
-set( CMAKE_EXPORT_COMPILE_COMMANDS ON )

@@ -44,7 +44,9 @@ set(CMAKE_CXX_STANDARD 17)
 include_directories(${UNITY_EDITOR}/Data/PluginAPI/)
 
 message(STATUS "System: ${CMAKE_SYSTEM_NAME}")
-message(STATUS "System: ${ANDROID_ABI}")
+
+# generate compile_commands.json
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 add_subdirectory(src)
 add_subdirectory(meta)

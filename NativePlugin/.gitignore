@@ -32,3 +32,5 @@ install_manifest.txt
 src/Debug
 src/*.dir
 /x64
+
+compile_commands.json
