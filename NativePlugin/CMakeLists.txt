@@ -41,6 +41,8 @@ endif()
 project(NativeAndroidTest)
 set(CMAKE_CXX_STANDARD 17)
 
+set(CMAKE_POSITION_INDEPENDENT_CODE ON)
+
 include_directories(${UNITY_EDITOR}/Data/PluginAPI/)
 
 message(STATUS "System: ${CMAKE_SYSTEM_NAME}")
