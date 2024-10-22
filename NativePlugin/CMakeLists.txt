@@ -48,5 +48,8 @@ message(STATUS "System: ${CMAKE_SYSTEM_NAME}")
 # generate compile_commands.json
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
+include_directories(lib)
+add_subdirectory(lib)
+
 add_subdirectory(src)
 add_subdirectory(meta)
