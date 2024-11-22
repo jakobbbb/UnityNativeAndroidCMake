@@ -10,15 +10,15 @@ Before opening the project, you must first compile the native plugin.
 ## Setup
 
 This repo is configured to work out of the box with the included plugin
-and Unity project out of the box, as well as given that your Unity
-Editor is installed via Unity Hub at the default location and with NDK
-(i.e. Android Build Support) included.  If this is not the case on your
-system, or you wish to adapt the CMake setup for your own needs, please
-consider the following:
+and Unity project, as well as given that your Unity Editor is installed
+via Unity Hub at the default location and with NDK (i.e. Android Build
+Support) included.  If this is not the case on your system, or you wish
+to adapt the CMake setup for your own needs, please consider the
+following:
 
 A Unity project into which the plugin is to be installed must be
-specified.  This is set by default to `./UnityProject` by default and
-can be overridden by setting the `UNITY_PROJECT_DIR` CMake flag.
+specified.  This is set to `./UnityProject` by default and can be
+overridden by setting the `UNITY_PROJECT_DIR` CMake flag.
 
 Given the Unity project, the CMake setup will extract the project's
 Unity version and attempt to locate both the Unity Editor (for inclusion
