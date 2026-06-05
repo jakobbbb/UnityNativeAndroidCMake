@@ -54,7 +54,7 @@ make CMAKE_FLAGS="-DUNITY_PROJECT_DIR=/path/to/project -DUNITY_EDITOR=/path/to/E
 ```
 
 ### Building for Android on Linux
-Instead of just running `make`, run `make anrdoid`.  You may have to run
+Instead of just running `make`, run `make android`.  You may have to run
 `make clean` beforehand.
 
 ## Note: Installation to the Unity Project
